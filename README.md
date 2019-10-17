@@ -16,10 +16,10 @@ This repository consists of several Implementations of machine learning algorith
 
 I will try to implement other algorithms in the near future.
 
-## Files
-### 1. Non-neural networks
+# Files
+## 1. Non-neural networks
 Implemented in simple_model.py. All algorithms are implemented as classes.
-#### 1.1 Logistic Regression
+### 1.1 Logistic Regression
 Logistic Regression using stochastic gradient descent. Call LogisticRegression() to make an instance. Some parameters are
 - lr_rate: learning rate
 - lr_decay: learning rate decay
@@ -37,7 +37,7 @@ logreg.fit(X_train, y_train)
 y_pred = logreg.predict(X_test)
 ```
 
-#### 1.2 Decision Tree
+### 1.2 Decision Tree
 Decision Tree implementation. Tree size as hyperparameter.
 
 Examples:
@@ -47,23 +47,23 @@ clf.fit(X_train, y_train)
 y_pred = clf.predict(X_test)
 ```
 
-#### 1.3 Random Forest
+### 1.3 Random Forest
 Random forest tree classifier. Mainly based on decision tree implementation above.
 
-### 2. Neural networks
-#### 2.1 solver.py
+## 2. Neural networks
+### 2.1 solver.py
 This is the solver class to solve any neural networks implemented in the classifiers folder. You will first need to make an instance of your model and then pass it to the Solver.
 
-#### 2.2 optim.py
+### 2.2 optim.py
 Has the functions for gradient descent. Implementations so far are,
 - sgd: stochastic gradient descent
 - rmsprop: RMSprop
 - adam: Adam
 
-#### 2.3 layers.py
+### 2.3 layers.py
 Defining what each layer in the network takes in and outputs. Layers include affine layer, ReLu layer, and the softmax loss layer.
 
-#### 2.4 network.py (in classfiers folder)
+### 2.4 network.py (in classfiers folder)
 Implementation of the fully-connected network. Using the layers defined in layers.py, it will initialize a neural network of any number of hidden layers and size.
 
 Examples:
@@ -89,5 +89,8 @@ solver = Solver(model, lr_rate=hyperparams["learning_rate"], batch_size=hyperpar
 solver.train(X_train, y_train)
 ```
 
-#### 2.5 gradient_check.py and test_grad.py
+### 2.5 gradient_check.py and test_grad.py
 Some test files to check if all layers are defined correctly.
+
+## Note
+The codes were originally written as part of task in CS189 at UC Berkeley.
