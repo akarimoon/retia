@@ -1,6 +1,11 @@
 # Implementation of different ML models
 This repository consists of several Implementations of machine learning algorithms without using any external libraries such as scikit-learn, keras, pytorch, etc.
 
+## Requirements
+- Python 3.7.4
+- numpy 1.17.2
+- scipy 1.3.1
+
 ## Currently implemented algorithms
 - Logistic Regression
 - Decision Tree
