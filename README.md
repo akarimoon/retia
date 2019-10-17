@@ -6,6 +6,7 @@ This repository consists of several Implementations of machine learning algorith
 - Decision Tree
 - Random Forest
 - Fully Connected Neural Network
+
 (as of 10/17/19)
 
 I will try to implement other algorithms in the near future.
